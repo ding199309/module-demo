@@ -7,7 +7,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
 
 
-  <!--指定spring配置文件-->
+  <!--&lt;!&ndash;指定spring配置文件&ndash;&gt;-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:config/applicationContext.xml</param-value>
@@ -50,9 +50,6 @@
     <!--拦截所有请求，对静态文件会有问题，在applicationContext-mvc.xml中解决-->
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
-
-
-
 
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
